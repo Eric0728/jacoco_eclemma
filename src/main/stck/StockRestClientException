@@ -1,0 +1,51 @@
+/**
+
+ */
+public class StockRestClientException extends RuntimeException {
+
+	/** field use for serial version UID. */
+	private static final long serialVersionUID = 5L;
+	
+	/** field use for fault information. */
+	private String faultInfo; 
+
+	/**
+	 * 
+	 * @param message
+	 * @param faultInfo
+	 */
+	public StockRestClientException (String message, String faultInfo){
+		super(message, null);
+		this.faultInfo = faultInfo;
+		
+	}
+	
+	/**
+	 * 
+	 * @param message
+	 * @param faultInfo
+	 * @param cause
+	 */
+	public StockRestClientException(String message, String faultInfo, Throwable cause){
+		super(message, cause);
+		this.faultInfo = faultInfo;
+	}
+
+	 /**
+	  * 
+	  * @return faultInfo
+	  */
+	public String getFaultInfo(){
+		return this.faultInfo;
+	}
+	
+	@Override
+	/**
+     * Returns a string representation of the object.
+     * 
+     * @return a string representation of the object.
+     */
+	public String toString() {
+		return new StringBuilder(super.toString()).append(". faultInfo= ").append(this.faultInfo).toString();
+	}
+}

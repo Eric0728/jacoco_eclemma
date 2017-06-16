@@ -1,0 +1,7 @@
+### Maven template
+target/
+.settings/
+bin/
+.class
+.classpath
+.project

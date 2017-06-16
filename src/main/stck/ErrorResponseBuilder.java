@@ -1,3 +1,13 @@
+import java.time.Instant;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Optional;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 public  final class  ErrorResponseBuilder {
 
 	private HttpServletRequest request;

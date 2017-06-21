@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework</groupId>
-	<artifactId>p2g-hk-company-securities-papi</artifactId>
+	<artifactId>company-securities-papi</artifactId>
 	<version>0.0.1</version>
 
 	<parent>
